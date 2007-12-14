@@ -1,0 +1,6 @@
+LTLIBRARY_NAME    = libspread.la
+LTLIBRARY_SOURCES = php_spread.c
+LTLIBRARY_LIBADD  = $(SPREAD_LIBADD) 
+LTLIBRARY_SHARED_NAME    = spread.la
+LTLIBRARY_SHARED_LIBADD  = $(SPREAD_SHARED_LIBADD) -lsp
+include $(top_srcdir)/build/dynlib.mk
